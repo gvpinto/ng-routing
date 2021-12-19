@@ -3,7 +3,7 @@
     <div class="list-group">
       <!-- fragment="loading" -->
       <a
-        [routerLink]="['/servers', 5, 'edit']"
+        [routerLink]="['/servers', server.id]"
         [queryParams]="{ allowEdit: 1 }"
         [fragment]="'loading'"
         style="cursor: pointer"
@@ -18,6 +18,6 @@
     <button class="btn btn-primary" (click)="onReload()">Reload Page</button>
     <app-edit-server></app-edit-server>
     <hr />
-    <app-server></app-server>
+    <!-- <app-server></app-server> -->
   </div>
 </div>
